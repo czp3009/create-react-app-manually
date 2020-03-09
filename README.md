@@ -113,7 +113,13 @@ Click the link printed in console(http://localhost:1234/) to preview your projec
 After modified files in project, just press `Ctrl-S` to save all files, parcel will hot reload them.
 
 # Additional
-If more babel plugins needed, create a file in project root named `.babelrc`, and write plugins in it, for example:
+If babel plugins needed, install babel first
+
+```bash
+yarn add @babel/core --dev
+```
+
+then create a file in project root named `.babelrc`, and write plugins in it, for example:
 
 ```json
 {
@@ -129,6 +135,6 @@ If more babel plugins needed, create a file in project root named `.babelrc`, an
 }
 ```
 
-parcel will automatic detect this file and install them.
+parcel will automatic detect this file and install them before start.
 
 Simple is the best.
